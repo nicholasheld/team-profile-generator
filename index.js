@@ -93,7 +93,7 @@ function engineerQuestions() {
      ])
      .then((answer) => {
         const engineer = new Engineer(answer.name, answer.id, answer.email, answer.github);
-        members.push(engineer);
+        teamMembers.push(engineer);
         createTeam();
      })
 }
@@ -125,7 +125,7 @@ function internQuestions() {
     ])
     .then((answer) => {
         const intern = new Intern(answer.name, answer.id, answer.email, answer.school);
-        members.push(intern);
+        teamMembers.push(intern);
         createTeam();
     })
 }
