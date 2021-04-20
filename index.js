@@ -5,9 +5,8 @@ const Manager = require('./lib/Manager');
 const jest = require('jest');
 const generateHTML = require('./src/generateHTML');
 const Engineer = require('./lib/Engineer');
+const Employee = require('./lib/Employee');
 const Intern = require('./lib/Intern');
-
-//const jest = require('jest');
 
 // An array of questions for general employee
 const teamMembers = [];
