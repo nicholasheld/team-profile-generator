@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "app the creats team profile",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasheld/team-profile-generator.git"
+  },
+  "author": "nicholas held",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholasheld/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/nicholasheld/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
