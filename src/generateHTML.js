@@ -40,21 +40,6 @@ function generateHTML(data) {
                         <p>GitHub: <span><a href="https://github.com/${data[2].github}" target="_blank" title="Link to engineer's GitHub profile">${data[2].github}</a></span></p>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center justify-content-between box-container">
-                    <div class="col" id="box">
-                        <h3>Intern</h3>
-                        <p>Name: <span>${data[3].name}</span></p>
-                        <p>ID: <span>${data[3].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[3].email}" title="Link to email address">${data[3].email}</a></span></p>
-                        <p>School: <span>${data[3].school}</span></p>
-                    </div>
-                    <div class="col" id="box">
-                        <h3>Intern</h3>
-                        <p>Name: <span>${data[4].name}</span></p>
-                        <p>ID: <span>${data[4].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[4].email}" title="Link to email address">${data[4].email}</a></span></p>
-                        <p>School: <span>${data[4].school}</span></p>
-                    </div>
                 </div>
             </div>
     

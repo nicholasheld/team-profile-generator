@@ -1,15 +1,17 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path')
 const Manager = require('./lib/Manager');
 const jest = require('jest');
-const generateHTML = require('./src/generateHTML');
+const render = require('./src/generateHTML');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
 // An array of questions for general employee
 const teamMembers = [];
-
+const outputDir = path.resolve(__dirname, 'output');
+const outputPath = path.join(outputDir, 'team.html');
 //create a manager function that runs inquireer
 function createManager() {
     inquirer
@@ -61,6 +63,7 @@ function createTeam() {
               internQuestions();
           } else if (choice.option === "The team is complete") {
               writeHTML();
+            //   buildTeam() 
           }
       })
 }
@@ -131,7 +134,13 @@ function internQuestions() {
 //runs the manager function to start
 createManager();
 
-
+// function buildTeam()    {
+//     if(!fs.existsSync(outputDir))    {
+//         fs.mkdirSync(outputDir)
+//     }
+//     fs.writeFileSync(outputPath, render(teamMembers), 'utf8')
+//     console.log(teamMembers);
+// }
 
 // Function to write HTML file
 function writeToFile(fileName, template) {
@@ -148,7 +157,7 @@ function writeToFile(fileName, template) {
 
 // Function that connects user inputs to generated HTML
 function writeHTML() {
-    let html = generateHTML(teamMembers);
+    let html = render(teamMembers);
     writeToFile('./dist/team.html', html);
 }
 
