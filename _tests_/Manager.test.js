@@ -28,9 +28,9 @@ describe("Manager", () => {
 
     describe("getOfficeNumber", () => {
         it("Should return manager's email address", () => {
-            let person = new Manager("David", 65, "david@gmail.com", 7632741655);
+            let person = new Manager("David", 65, "david@gmail.com", 5);
 
-            expect(person.getOfficeNumber()).toEqual(7632741655);
+            expect(person.getOfficeNumber()).toEqual(5);
         })
     });
 

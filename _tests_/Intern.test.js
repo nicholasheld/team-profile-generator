@@ -31,7 +31,7 @@ describe("Intern", () => {
         it("Should return the intern's school name", () => {
             let person = new Intern("Joe", 77, "joe@gmail.com", "University of MN");
 
-            expect(person.getSchool()).toEqual("University of MN");
+            expect(person.getIntern()).toEqual("University of MN");
         })
     });
 
