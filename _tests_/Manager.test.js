@@ -4,33 +4,33 @@ const Manager = require("../lib/Manager");
 describe("Manager", () => {
     describe("getName", () => {
         it("Should return manager's name", () => {
-            let person = new Manager("Thomas");
+            let person = new Manager("David");
 
-            expect(person.getName()).toEqual("Thomas");
+            expect(person.getName()).toEqual("David");
         })
     });
 
     describe("getId", () => {
         it("Should return manager's ID", () => {
-            let person = new Manager("Margaret", 500);
+            let person = new Manager("David", 65);
 
-            expect(person.getId()).toEqual(500);
+            expect(person.getId()).toEqual(65);
         })
     });
 
     describe("getEmail", () => {
         it("Should return manager's email address", () => {
-            let person = new Manager("Bianca", 300, "bianca@gmail.com");
+            let person = new Manager("David", 65, "david@gmail.com");
 
-            expect(person.getEmail()).toEqual("bianca@gmail.com");
+            expect(person.getEmail()).toEqual("david@gmail.com");
         })
     });
 
     describe("getOfficeNumber", () => {
         it("Should return manager's email address", () => {
-            let person = new Manager("Bianca", 300, "bianca@gmail.com", 6513758673);
+            let person = new Manager("David", 65, "david@gmail.com", 7632741655);
 
-            expect(person.getOfficeNumber()).toEqual(6513758673);
+            expect(person.getOfficeNumber()).toEqual(7632741655);
         })
     });
 

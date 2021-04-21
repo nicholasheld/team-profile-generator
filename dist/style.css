@@ -7,7 +7,7 @@ main {
 
 header {
     padding: 40px;
-    background-color: lightcoral;
+    background-color: lightgrey;
     text-align: center;
     font-size: 50px;
     font-family: 'Orelega One', cursive;
@@ -16,7 +16,7 @@ header {
 #box {
     margin: 30px;
     padding: 0px;
-    border: 6px solid lightcoral;
+    border: 6px solid lightblue;
     border-radius: 15px;
     text-align: center;
     background-color: rgb(179, 172, 172);

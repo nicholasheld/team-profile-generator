@@ -5,25 +5,25 @@ const Employee = require("../lib/Employee");
 describe("Employee", () => {
     describe("getName", () => {
         it("Should return employee's name", () => {
-            let person = new Employee("David");
+            let person = new Employee("Nicholas");
 
-            expect(person.getName()).toEqual("David");
+            expect(person.getName()).toEqual("Nicholas");
         })
     });
 
     describe("getId", () => {
         it("Should return employee's ID", () => {
-            let person = new Employee("Steve", 200);
+            let person = new Employee("Nicholas", 21);
 
-            expect(person.getId()).toEqual(200);
+            expect(person.getId()).toEqual(21);
         })
     });
 
     describe("getEmail", () => {
         it("Should return employee's email address", () => {
-            let person = new Employee("Nina", 300, "nina@gmail.com");
+            let person = new Employee("Jeff", 23, "jeff@gmail.com");
 
-            expect(person.getEmail()).toEqual("nina@gmail.com");
+            expect(person.getEmail()).toEqual("jeff@gmail.com");
         })
     });
 
